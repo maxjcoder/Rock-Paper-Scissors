@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Rock, Paper, Scissors</title>
+</head>
+
+<body>
+
+    <!-- Provide directions
+User will make a choice
+Compter will make a choice
+Collect the choices 
+Compare the choices
+Display wins, losses, ties 
+ -->
+
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <div id="game">
+                <p class="display-4">Press R, P, or S to start playing!</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="card1" style="background-color:dodgerblue";>
+        <div class="card-body">
+            <img src="../Rock-Paper-Scissors/assets/images/alex2.0.png">
+            <p style="color:white";>(This image comes from the Sega Genesis game: Alex Kidd in Miracle World, 1986).</p>
+        </div>
+    </div>
+
+    <div class="card2" style="background-color:saddlebrown";>
+        <div class="card-body">
+            <p style="color:white";>(c) Max M. Jackson, 2019.</p>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+
+        var options = ["r", "p", "s"];
+        var wins = 0;
+        var losses = 0;
+        var ties = 0;
+
+        document.onkeyup = function () {
+            var userGuess = String.fromCharCode(event.keyCode).
+                toLowerCase();
+
+            console.log(userGuess);
+
+            var computerGuess = options[Math.floor(Math.random() * options.length)];
+
+            console.log(computerGuess);
+
+            if (userGuess === 'r' || userGuess === 'p' || userGuess === 's') {
+                if ((userGuess == 'r') && (computerGuess == 's')) {
+                    wins++;
+                    alert("Wins: " + wins);
+                }
+                if ((userGuess == 'r') && (computerGuess == 'p')) {
+                    losses++;
+                    alert("Losses: " + losses);
+                }
+                if ((userGuess == 'p') && (computerGuess == 'r')) {
+                    wins++;
+                    alert("Wins: " + wins);
+                }
+                if ((userGuess == 'p') && (computerGuess == 's')) {
+                    losses++;
+                    alert("Losses: " + losses);
+                }
+                if ((userGuess == 's') && (computerGuess == 'p')) {
+                    wins++;
+                    alert("Wins: " + wins);
+                }
+                if ((userGuess == 's') && (computerGuess == 'r')) {
+                    losses++;
+                    alert("Losses: " + losses);
+                }
+                if ((userGuess === computerGuess)) {
+                    ties++;
+                    alert("Ties: " + ties);
+                }
+            } else {
+                alert("Please choose r, p, or s");
+            }
+
+            var html = "<p>Press r, p, or s to start playing</p>" +
+                "<p>wins: " + wins + "</p>" +
+                "<p>losses: " + losses + "</p>" +
+                "<p>ties: " + ties + "</p>";
+
+            document.querySelector("#game").innerHTML = html;
+        }
+
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
