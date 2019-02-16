@@ -23,22 +23,29 @@ Display wins, losses, ties
 
     <div class="jumbotron jumbotron-fluid">
         <div class="container">
+            <p class="display-4">Press R, P, or S to start playing!</p>
+        </div>
+    </div>
+
+    <div class="card1" style="background-color: white" ;>
+        <div class="card-body">
             <div id="game">
-                <p class="display-4">Press R, P, or S to start playing!</p>
+                <p>SCOREBOARD</p>
             </div>
         </div>
     </div>
 
-    <div class="card1" style="background-color:dodgerblue";>
+    <div class="card1" style="background-color:dodgerblue" ;>
         <div class="card-body">
             <img src="../Rock-Paper-Scissors/assets/images/alex2.0.png">
-            <p style="color:white";>(This image comes from the Sega Genesis game: Alex Kidd in Miracle World, 1986).</p>
+            <p style="color:white" ;>(This image comes from the Sega Genesis game: Alex Kidd in Miracle World, 1986).
+            </p>
         </div>
     </div>
 
-    <div class="card2" style="background-color:saddlebrown";>
+    <div class="card2" style="background-color:saddlebrown" ;>
         <div class="card-body">
-            <p style="color:white";>(c) Max M. Jackson, 2019.</p>
+            <p style="color:white" ;>(c) Max M. Jackson, 2019.</p>
         </div>
     </div>
 
@@ -92,10 +99,10 @@ Display wins, losses, ties
                 alert("Please choose r, p, or s");
             }
 
-            var html = "<p>Press r, p, or s to start playing</p>" +
-                "<p>wins: " + wins + "</p>" +
-                "<p>losses: " + losses + "</p>" +
-                "<p>ties: " + ties + "</p>";
+            var html = "<p>SCOREBOARD</p>" +
+                "<p>Wins: " + wins + "</p>" +
+                "<p>Losses: " + losses + "</p>" +
+                "<p>Ties: " + ties + "</p>";
 
             document.querySelector("#game").innerHTML = html;
         }
