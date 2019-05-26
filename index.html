@@ -18,49 +18,76 @@
 
 </head>
 
-<body>
+<div class="container">
 
-    <!-- Provide directions
-User will make a choice
-Compter will make a choice
-Collect the choices 
-Compare the choices
-Display wins, losses, ties 
- -->
+    <body>
 
-    <div class="container">
+        <div id="bg">
+            <img src="./assets/images/alexKidd6.jpg" alt="Page Background">
+        </div>
 
-        <div class="jumbotron jumbotron-fluid">
-            <div class="container">
-                <p class="display-4">Press R, P, or S to start playing!</p>
+        <div class="row">
+            <div class="col-12">
+                <div class="jumbotron">
+
+                    <div class="container-fluid">
+                        <h1 class="display-4"><img src="./assets/images/alexKidd.jpg"> Rock, Paper, Scissors Game</h1>
+                        <hr>
+                        <p class="lead" style="font-weight: bold;">Chosing rock will beat another player who has chosen scissors ("rock crushes scissors"), but will lose to one who has played paper ("paper covers rock"); a play of paper will lose to a play of scissors ("scissors cuts paper").
+                            If both players choose the same, the game is tied and is replayed to break the tie.</p>
+                    </div>
+
+                </div>
             </div>
         </div>
 
-        <div class="card1">
-            <div class="card-body">
-                <div id="game">
-                    <p>SCOREBOARD</p>
+        <div class="row">
+            <div class="col-4">
+                <div class="card">
+
+                    <div id="directions">
+                        <p><strong>Directions:</strong></p>
+                        <p>Press R, P, or S to start playing!</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-8">
+                <div class="card">
+                    <div id="game">
+                        <p>SCOREBOARD</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <br>
+        <br>
+
+        <div class="row">
+            <div class="col-12">
+                <div class="card">
+
+                    <div class="card-header">
+                        <h5 class="card-title">My Name is Max Jackson and I am a web developer in the making...</h5>
+                    </div>
+
+                    <div id="footer">
+                        <div class="card-body">
+                            <p class="card-text">Click the link below to view my portfolio.</p>
+                            <a href="#" class="btn btn-primary">Max Jackson's Portfolio</a>
+                            <hr>
+                            <p>(c) 2019. Max M. Jackson</p>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
 
         <br>
-
-        <div class="card2">
-            <div class="card-body">
-                <img src="../Rock-Paper-Scissors/assets/images/alex2.0.png">
-                <p>(This image comes from the Sega Genesis game: Alex Kidd in Miracle World, 1986).
-                </p>
-            </div>
-        </div>
-
-        <br>
-
-        <div class="card3">
-            <div class="card-body">
-                <p>(c) Max M. Jackson, 2019.</p>
-            </div>
-        </div>
 
         <!--Bootstrap-->
 
@@ -71,7 +98,7 @@ Display wins, losses, ties
         <!--Javascript File-->
         <script src="./assets/javascript/javascript.js"></script>
 
-</body>
+    </body>
 
 </div>
 

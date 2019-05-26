@@ -1,20 +1,46 @@
-.card1 {
-    background-color: white;
-    border: double;
+body,
+html {
+    height: 100%;
+    width: 100%;
 }
 
-.card2 {
-    background-color: dodgerblue;
-    color: white;
+#bg {
+    position: fixed;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    /* page background */
 }
 
+#bg img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    min-width: 50%;
+    min-height: 50%;
+    /* page background image */
+}
+
+.jumbotron {
+    opacity: 0.95;
+    background: lightblue linear-gradient(to bottom, white, lightblue);
+}
+
+#directions,
 #game {
+    background-color: lemonchiffon;
     text-align: center;
-    font-weight: bold;
-    font-size: 24px;
 }
 
-.card3 {
-    background-color: saddlebrown;
-    color: white;
+.card-header {
+    text-align: center;
+}
+
+#footer {
+    background-color: lemonchiffon;
+    text-align: left;
 }
