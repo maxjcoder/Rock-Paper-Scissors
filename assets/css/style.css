@@ -1,0 +1,20 @@
+.card1 {
+    background-color: white;
+    border: double;
+}
+
+.card2 {
+    background-color: dodgerblue;
+    color: white;
+}
+
+#game {
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.card3 {
+    background-color: saddlebrown;
+    color: white;
+}
